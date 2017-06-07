@@ -114,6 +114,9 @@ export default class Sound extends React.Component {
       if (this.props.volume !== prevProps.volume) {
         sound.setVolume(this.props.volume);
       }
+      if (this.props.playbackRate !== prevProps.playbackRate) {
+        sound.setPlaybackRate(this.props.playbackRate);
+      }
     };
 
     if (this.props.url !== prevProps.url) {
@@ -133,6 +136,7 @@ export default class Sound extends React.Component {
     this.stopCreatingSound = createSound({
       url: this.props.url,
       volume: props.volume,
+      playbackRate: props.playbackRate,
       whileloading() {
         props.onLoading(this);
       },
