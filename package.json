@@ -1,5 +1,5 @@
 {
-  "name": "@platoai/react-sound",
+  "name": "@voxjar/react-sound",
   "version": "0.6.2",
   "description": "React Sound component using soundmanager2",
   "main": "lib/index.js",
